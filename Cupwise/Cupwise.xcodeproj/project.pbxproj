@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ADBF9D90F4647907D741CA5 /* Pods_Cupwise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9685133887D296BC1E3E6AA0 /* Pods_Cupwise.framework */; };
+		BC0E2EA021BA7FB4003EBFFF /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E2E9F21BA7FB4003EBFFF /* CoffeeView.swift */; };
+		BC0E2EA421BBD8D8003EBFFF /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E2EA321BBD8D8003EBFFF /* AppData.swift */; };
+		BC2F1F2121B54FD300DDA710 /* SplitwiseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2021B54FD300DDA710 /* SplitwiseConnector.swift */; };
+		BC2F1F2321B56EE400DDA710 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2221B56EE400DDA710 /* Group.swift */; };
+		BC2F1F2521B57A2A00DDA710 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2421B57A2A00DDA710 /* User.swift */; };
+		BC3D183721B9B07C000EE7C1 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D183621B9B07C000EE7C1 /* CircleProgressView.swift */; };
+		BC48E22021B2993300A60BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E21F21B2993300A60BBA /* AppDelegate.swift */; };
+		BC48E22421B2993400A60BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC48E22321B2993400A60BBA /* Assets.xcassets */; };
+		BC48E22721B2993400A60BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC48E22521B2993400A60BBA /* Main.storyboard */; };
+		BC48E24C21B29C7B00A60BBA /* ExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E24B21B29C7B00A60BBA /* ExpenseManager.swift */; };
+		BC48E24F21B29C9800A60BBA /* ExpenseManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E24E21B29C9800A60BBA /* ExpenseManaging.swift */; };
+		BC48E25221B29F0F00A60BBA /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E25121B29F0F00A60BBA /* CoffeeViewController.swift */; };
+		BC48E25421B29FB200A60BBA /* MockExpenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E25321B29FB200A60BBA /* MockExpenseManager.swift */; };
+		BC48E25821B2DB1700A60BBA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BC48E25721B2DB1700A60BBA /* Podfile */; };
+		BC6E7B4921B4071600AFEC7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E7B4821B4071600AFEC7C /* LoginViewController.swift */; };
+		BC6E7B4B21B4089500AFEC7C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */; };
+		BCBFE14521B7E64400FEB24A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE14421B7E64400FEB24A /* SetupViewController.swift */; };
+		BCDB47E921B44EFB009F96A0 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB47E821B44EFB009F96A0 /* CreditsViewController.swift */; };
+		BCDB47EB21B520C9009F96A0 /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB47EA21B520C9009F96A0 /* ConfigureViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC48E22F21B2993400A60BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC48E21421B2993300A60BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC48E21B21B2993300A60BBA;
+			remoteInfo = Cupwise;
+		};
+		BC48E23A21B2993400A60BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC48E21421B2993300A60BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC48E21B21B2993300A60BBA;
+			remoteInfo = Cupwise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		571C4B8D848CC6BCDDF9B4FB /* Pods-Cupwise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupwise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cupwise/Pods-Cupwise.debug.xcconfig"; sourceTree = "<group>"; };
+		9685133887D296BC1E3E6AA0 /* Pods_Cupwise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cupwise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0E2E9F21BA7FB4003EBFFF /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
+		BC0E2EA321BBD8D8003EBFFF /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		BC2F1F2021B54FD300DDA710 /* SplitwiseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitwiseConnector.swift; sourceTree = "<group>"; };
+		BC2F1F2221B56EE400DDA710 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		BC2F1F2421B57A2A00DDA710 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC3D183621B9B07C000EE7C1 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		BC48E21C21B2993300A60BBA /* Cupwise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupwise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC48E21F21B2993300A60BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC48E22321B2993400A60BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC48E22621B2993400A60BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC48E22821B2993400A60BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC48E22921B2993400A60BBA /* Cupwise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cupwise.entitlements; sourceTree = "<group>"; };
+		BC48E22E21B2993400A60BBA /* CupwiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupwiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC48E23921B2993400A60BBA /* CupwiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupwiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC48E24B21B29C7B00A60BBA /* ExpenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManager.swift; sourceTree = "<group>"; };
+		BC48E24E21B29C9800A60BBA /* ExpenseManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseManaging.swift; sourceTree = "<group>"; };
+		BC48E25121B29F0F00A60BBA /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
+		BC48E25321B29FB200A60BBA /* MockExpenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExpenseManager.swift; sourceTree = "<group>"; };
+		BC48E25721B2DB1700A60BBA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC6E7B4821B4071600AFEC7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		BCBFE14421B7E64400FEB24A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		BCDB47E821B44EFB009F96A0 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		BCDB47EA21B520C9009F96A0 /* ConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
+		D997F2498680D0D37A1C76B5 /* Pods-Cupwise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupwise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cupwise/Pods-Cupwise.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC48E21921B2993300A60BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADBF9D90F4647907D741CA5 /* Pods_Cupwise.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E22B21B2993400A60BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E23621B2993400A60BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4681E01508A9727CF972D8A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9685133887D296BC1E3E6AA0 /* Pods_Cupwise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BD3FF7A03A3049EA9E59AFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				571C4B8D848CC6BCDDF9B4FB /* Pods-Cupwise.debug.xcconfig */,
+				D997F2498680D0D37A1C76B5 /* Pods-Cupwise.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC0E2EA121BBD8A7003EBFFF /* custom views */ = {
+			isa = PBXGroup;
+			children = (
+				BC0E2E9F21BA7FB4003EBFFF /* CoffeeView.swift */,
+				BC3D183621B9B07C000EE7C1 /* CircleProgressView.swift */,
+			);
+			path = "custom views";
+			sourceTree = "<group>";
+		};
+		BC0E2EA221BBD8B6003EBFFF /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC6E7B4821B4071600AFEC7C /* LoginViewController.swift */,
+				BCDB47EA21B520C9009F96A0 /* ConfigureViewController.swift */,
+				BCBFE14421B7E64400FEB24A /* SetupViewController.swift */,
+				BC48E25121B29F0F00A60BBA /* CoffeeViewController.swift */,
+				BCDB47E821B44EFB009F96A0 /* CreditsViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		BC2F1F1F21B54FBC00DDA710 /* communication */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F1F2021B54FD300DDA710 /* SplitwiseConnector.swift */,
+			);
+			path = communication;
+			sourceTree = "<group>";
+		};
+		BC2F1F2621B5829100DDA710 /* Expense Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BC48E24E21B29C9800A60BBA /* ExpenseManaging.swift */,
+				BC48E24B21B29C7B00A60BBA /* ExpenseManager.swift */,
+				BC48E25321B29FB200A60BBA /* MockExpenseManager.swift */,
+			);
+			path = "Expense Manager";
+			sourceTree = "<group>";
+		};
+		BC48E21321B2993300A60BBA = {
+			isa = PBXGroup;
+			children = (
+				BC48E21E21B2993300A60BBA /* Cupwise */,
+				BC48E21D21B2993300A60BBA /* Products */,
+				8BD3FF7A03A3049EA9E59AFD /* Pods */,
+				4681E01508A9727CF972D8A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC48E21D21B2993300A60BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC48E21C21B2993300A60BBA /* Cupwise.app */,
+				BC48E22E21B2993400A60BBA /* CupwiseTests.xctest */,
+				BC48E23921B2993400A60BBA /* CupwiseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC48E21E21B2993300A60BBA /* Cupwise */ = {
+			isa = PBXGroup;
+			children = (
+				BC48E22921B2993400A60BBA /* Cupwise.entitlements */,
+				BC48E22821B2993400A60BBA /* Info.plist */,
+				BC48E25721B2DB1700A60BBA /* Podfile */,
+				BC48E25021B29D2100A60BBA /* view */,
+				BC48E24D21B29C8400A60BBA /* model */,
+				BC2F1F1F21B54FBC00DDA710 /* communication */,
+			);
+			path = Cupwise;
+			sourceTree = "<group>";
+		};
+		BC48E24D21B29C8400A60BBA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F1F2621B5829100DDA710 /* Expense Manager */,
+				BC2F1F2421B57A2A00DDA710 /* User.swift */,
+				BC2F1F2221B56EE400DDA710 /* Group.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BC48E25021B29D2100A60BBA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BC0E2EA221BBD8B6003EBFFF /* view controllers */,
+				BC0E2EA121BBD8A7003EBFFF /* custom views */,
+				BCD2377521BD29C300043521 /* other */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BCD2377521BD29C300043521 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				BC48E21F21B2993300A60BBA /* AppDelegate.swift */,
+				BC0E2EA321BBD8D8003EBFFF /* AppData.swift */,
+				BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */,
+				BC48E22521B2993400A60BBA /* Main.storyboard */,
+				BC48E22321B2993400A60BBA /* Assets.xcassets */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC48E21B21B2993300A60BBA /* Cupwise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC48E24221B2993400A60BBA /* Build configuration list for PBXNativeTarget "Cupwise" */;
+			buildPhases = (
+				87816123F20A6ECAC7D2E06D /* [CP] Check Pods Manifest.lock */,
+				BC48E21821B2993300A60BBA /* Sources */,
+				BC48E21921B2993300A60BBA /* Frameworks */,
+				BC48E21A21B2993300A60BBA /* Resources */,
+				5A716640E98C47AFD60EF5E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cupwise;
+			productName = Cupwise;
+			productReference = BC48E21C21B2993300A60BBA /* Cupwise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC48E22D21B2993400A60BBA /* CupwiseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC48E24521B2993400A60BBA /* Build configuration list for PBXNativeTarget "CupwiseTests" */;
+			buildPhases = (
+				BC48E22A21B2993400A60BBA /* Sources */,
+				BC48E22B21B2993400A60BBA /* Frameworks */,
+				BC48E22C21B2993400A60BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC48E23021B2993400A60BBA /* PBXTargetDependency */,
+			);
+			name = CupwiseTests;
+			productName = CupwiseTests;
+			productReference = BC48E22E21B2993400A60BBA /* CupwiseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC48E23821B2993400A60BBA /* CupwiseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC48E24821B2993400A60BBA /* Build configuration list for PBXNativeTarget "CupwiseUITests" */;
+			buildPhases = (
+				BC48E23521B2993400A60BBA /* Sources */,
+				BC48E23621B2993400A60BBA /* Frameworks */,
+				BC48E23721B2993400A60BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC48E23B21B2993400A60BBA /* PBXTargetDependency */,
+			);
+			name = CupwiseUITests;
+			productName = CupwiseUITests;
+			productReference = BC48E23921B2993400A60BBA /* CupwiseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC48E21421B2993300A60BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jan Wasgint";
+				TargetAttributes = {
+					BC48E21B21B2993300A60BBA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BC48E22D21B2993400A60BBA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BC48E21B21B2993300A60BBA;
+					};
+					BC48E23821B2993400A60BBA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BC48E21B21B2993300A60BBA;
+					};
+				};
+			};
+			buildConfigurationList = BC48E21721B2993300A60BBA /* Build configuration list for PBXProject "Cupwise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC48E21321B2993300A60BBA;
+			productRefGroup = BC48E21D21B2993300A60BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC48E21B21B2993300A60BBA /* Cupwise */,
+				BC48E22D21B2993400A60BBA /* CupwiseTests */,
+				BC48E23821B2993400A60BBA /* CupwiseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC48E21A21B2993300A60BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC48E25821B2DB1700A60BBA /* Podfile in Resources */,
+				BC48E22421B2993400A60BBA /* Assets.xcassets in Resources */,
+				BC48E22721B2993400A60BBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E22C21B2993400A60BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E23721B2993400A60BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A716640E98C47AFD60EF5E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cupwise/Pods-Cupwise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cupwise/Pods-Cupwise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87816123F20A6ECAC7D2E06D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cupwise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC48E21821B2993300A60BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6E7B4B21B4089500AFEC7C /* HelperExtensions.swift in Sources */,
+				BCDB47EB21B520C9009F96A0 /* ConfigureViewController.swift in Sources */,
+				BC3D183721B9B07C000EE7C1 /* CircleProgressView.swift in Sources */,
+				BC48E24C21B29C7B00A60BBA /* ExpenseManager.swift in Sources */,
+				BC2F1F2321B56EE400DDA710 /* Group.swift in Sources */,
+				BC48E25221B29F0F00A60BBA /* CoffeeViewController.swift in Sources */,
+				BC48E24F21B29C9800A60BBA /* ExpenseManaging.swift in Sources */,
+				BCBFE14521B7E64400FEB24A /* SetupViewController.swift in Sources */,
+				BC2F1F2121B54FD300DDA710 /* SplitwiseConnector.swift in Sources */,
+				BCDB47E921B44EFB009F96A0 /* CreditsViewController.swift in Sources */,
+				BC2F1F2521B57A2A00DDA710 /* User.swift in Sources */,
+				BC6E7B4921B4071600AFEC7C /* LoginViewController.swift in Sources */,
+				BC0E2EA421BBD8D8003EBFFF /* AppData.swift in Sources */,
+				BC48E25421B29FB200A60BBA /* MockExpenseManager.swift in Sources */,
+				BC0E2EA021BA7FB4003EBFFF /* CoffeeView.swift in Sources */,
+				BC48E22021B2993300A60BBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E22A21B2993400A60BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC48E23521B2993400A60BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC48E23021B2993400A60BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC48E21B21B2993300A60BBA /* Cupwise */;
+			targetProxy = BC48E22F21B2993400A60BBA /* PBXContainerItemProxy */;
+		};
+		BC48E23B21B2993400A60BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC48E21B21B2993300A60BBA /* Cupwise */;
+			targetProxy = BC48E23A21B2993400A60BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC48E22521B2993400A60BBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC48E22621B2993400A60BBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC48E24021B2993400A60BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC48E24121B2993400A60BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BC48E24321B2993400A60BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571C4B8D848CC6BCDDF9B4FB /* Pods-Cupwise.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cupwise/Cupwise.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = Cupwise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.Cupwise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BC48E24421B2993400A60BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D997F2498680D0D37A1C76B5 /* Pods-Cupwise.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cupwise/Cupwise.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = Cupwise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.Cupwise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		BC48E24621B2993400A60BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = CupwiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.CupwiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cupwise.app/Contents/MacOS/Cupwise";
+			};
+			name = Debug;
+		};
+		BC48E24721B2993400A60BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = CupwiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.CupwiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cupwise.app/Contents/MacOS/Cupwise";
+			};
+			name = Release;
+		};
+		BC48E24921B2993400A60BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = CupwiseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.CupwiseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Cupwise;
+			};
+			name = Debug;
+		};
+		BC48E24A21B2993400A60BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9HC3682932;
+				INFOPLIST_FILE = CupwiseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jan.CupwiseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Cupwise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC48E21721B2993300A60BBA /* Build configuration list for PBXProject "Cupwise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC48E24021B2993400A60BBA /* Debug */,
+				BC48E24121B2993400A60BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC48E24221B2993400A60BBA /* Build configuration list for PBXNativeTarget "Cupwise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC48E24321B2993400A60BBA /* Debug */,
+				BC48E24421B2993400A60BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC48E24521B2993400A60BBA /* Build configuration list for PBXNativeTarget "CupwiseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC48E24621B2993400A60BBA /* Debug */,
+				BC48E24721B2993400A60BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC48E24821B2993400A60BBA /* Build configuration list for PBXNativeTarget "CupwiseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC48E24921B2993400A60BBA /* Debug */,
+				BC48E24A21B2993400A60BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC48E21421B2993300A60BBA /* Project object */;
+}

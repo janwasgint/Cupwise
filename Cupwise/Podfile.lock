@@ -1,0 +1,20 @@
+PODS:
+  - OAuthSwift (1.2.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - OAuthSwift (~> 1.2.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OAuthSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  OAuthSwift: 27b34fe80b76b67cd8f45571e0be2432bc9f6de1
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 8a8078b039ae8ed4c34c703ff891fc37ef0ce463
+
+COCOAPODS: 1.6.0.beta.2
