@@ -84,6 +84,25 @@ fileprivate func performSwitch(toViewController: ViewController) {
     popover.contentViewController?.view.fadeIn(duration: 0.5)
 }
 
+extension Date {
+    
+    static func dateTimeStamp() -> String {
+        return Date().toDateTimeStamp()
+    }
+    
+    static func toDate(string: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        return dateFormatter.date(from: string)
+    }
+    
+    func toDateTimeStamp() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd"
+        return dateFormatter.string(from: self)
+    }
+}
+
 extension CGColor {
     static func colorWith(r: Int, g: Int, b: Int) -> CGColor {
         return CGColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)

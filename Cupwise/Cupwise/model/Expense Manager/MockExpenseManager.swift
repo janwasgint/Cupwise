@@ -17,6 +17,10 @@ class MockExpenseManager: ExpenseManaging {
         return User(id: 0, firstName: "Mock", lastName: "User", email: "mock.user@mockmail.com", defaultCurrency: "MOCK")
     }
     
+    func loggedIn() -> Bool {
+        return false
+    }
+    
     func logIn(success: @escaping () -> Void, failure: @escaping (String) -> Void) {
         print("Logging In ...")
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: success)

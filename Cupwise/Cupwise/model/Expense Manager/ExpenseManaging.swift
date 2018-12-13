@@ -9,6 +9,7 @@ protocol ExpenseManaging {
     var coffeeGroupId: Int? { get set }
     var coffeeAccountId: Int? { get set }
     
+    func loggedIn() -> Bool
     func logIn(success: @escaping () -> Void, failure: @escaping (String) -> Void)
     func setup(success: @escaping () -> Void, failure: @escaping (String) -> Void)
     func currentUser() -> User?

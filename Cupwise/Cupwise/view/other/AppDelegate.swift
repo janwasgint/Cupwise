@@ -14,7 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
             button.action = #selector(AppDelegate.togglePopover(_:))
         }
-        switchFrom(currentViewController: nil, toViewController: .login)
+        
+        if expenseManager.loggedIn() {
+            switchFrom(currentViewController: nil, toViewController: .setup)
+        } else {
+            switchFrom(currentViewController: nil, toViewController: .login)
+        }
         
         NSAppleEventManager.shared().setEventHandler(self, andSelector:#selector(AppDelegate.handleGetURL(event:withReplyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }

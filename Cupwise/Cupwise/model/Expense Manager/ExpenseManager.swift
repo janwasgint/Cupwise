@@ -19,6 +19,10 @@ class ExpenseManager: ExpenseManaging {
         coffeePrice = 0.5
     }
     
+    func loggedIn() -> Bool {
+        return splitwiseConnector.previousAuthorizationAvailable()
+    }
+    
     func logIn(success: @escaping () -> Void, failure: @escaping (String) -> Void) {
         splitwiseConnector.authorize(success: success, failure: failure)
     }
@@ -56,13 +60,10 @@ class ExpenseManager: ExpenseManaging {
     }
     
     func addCoffeeExpense(numberOfCoffees: Int, success: @escaping () -> Void) {
-//        let payment = Payment(numberOfCoffees: numberOfCoffees)
         splitwiseConnector.httpPostExpense(numberOfCoffees: numberOfCoffees, success: {
             success()
         }, failure: { _ in
             
         })
     }
-    
-    
 }
