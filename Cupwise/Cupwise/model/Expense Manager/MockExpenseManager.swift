@@ -31,8 +31,9 @@ class MockExpenseManager: ExpenseManaging {
         DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: success)
     }
     
-    func groups() -> [String] {
-        return ["MockGroup A", "MockGroup B"]
+    func groups() -> [Group] {
+        let mockUser = User(id: 0, firstName: "Mock", lastName: "User", email: "mock@user.com", defaultCurrency: "MOCK")
+        return [Group(id: 0, name: "Mock Group", currencies: ["MOCK"], members: [mockUser])]
     }
     
     func membersFor(group: String) -> [(String, Int)] {

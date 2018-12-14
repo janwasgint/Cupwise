@@ -43,20 +43,8 @@ class ExpenseManager: ExpenseManaging {
         return user
     }
     
-    func groups() -> [String] {
-        return groupsOfUser?.map { $0.name } ?? []
-    }
-    
-    func membersFor(group: String) -> [(/*name:*/ String, /*id:*/ Int)] {
-        return groupsOfUser?.reduce([]) { $1.name == group ? $1.members.map { ($0.name, $0.id ) } : $0 } ?? []
-    }
-    
-    func currenciesFor(group: String) -> [String] {
-        return groupsOfUser?.reduce([]) { $1.name == group ? $1.currencies : $0 } ?? []
-    }
-    
-    func idFor(group: String) -> Int? {
-        return groupsOfUser?.filter { $0.name == group }.first?.id
+    func groups() -> [Group] {
+        return groupsOfUser ?? []
     }
     
     func addCoffeeExpense(numberOfCoffees: Int, success: @escaping () -> Void) {

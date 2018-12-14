@@ -30,6 +30,7 @@ class CoffeeViewController: NSViewController {
             startLoading()
             expenseManager.addCoffeeExpense(numberOfCoffees: numberOfCoffees, success: {
                 self.stopLoading()
+                playPaymentSound()
             })
         }
     }

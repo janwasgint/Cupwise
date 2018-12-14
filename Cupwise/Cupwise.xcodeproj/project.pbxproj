@@ -25,6 +25,7 @@
 		BC6E7B4921B4071600AFEC7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E7B4821B4071600AFEC7C /* LoginViewController.swift */; };
 		BC6E7B4B21B4089500AFEC7C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */; };
 		BCBFE14521B7E64400FEB24A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE14421B7E64400FEB24A /* SetupViewController.swift */; };
+		BCD2EFC221C3B900002FFCDE /* payment_success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCD2EFC121C3B8F1002FFCDE /* payment_success.m4a */; };
 		BCDB47E921B44EFB009F96A0 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB47E821B44EFB009F96A0 /* CreditsViewController.swift */; };
 		BCDB47EB21B520C9009F96A0 /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB47EA21B520C9009F96A0 /* ConfigureViewController.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		BC6E7B4821B4071600AFEC7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
 		BCBFE14421B7E64400FEB24A /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		BCD2EFC121C3B8F1002FFCDE /* payment_success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = payment_success.m4a; path = ../../../../../../../../Downloads/payment_success.m4a; sourceTree = "<group>"; };
 		BCDB47E821B44EFB009F96A0 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		BCDB47EA21B520C9009F96A0 /* ConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
 		D997F2498680D0D37A1C76B5 /* Pods-Cupwise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cupwise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cupwise/Pods-Cupwise.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				BC0E2EA321BBD8D8003EBFFF /* AppData.swift */,
 				BC6E7B4A21B4089500AFEC7C /* HelperExtensions.swift */,
 				BC48E22521B2993400A60BBA /* Main.storyboard */,
+				BCD2EFC121C3B8F1002FFCDE /* payment_success.m4a */,
 				BC48E22321B2993400A60BBA /* Assets.xcassets */,
 			);
 			path = other;
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC48E25821B2DB1700A60BBA /* Podfile in Resources */,
+				BCD2EFC221C3B900002FFCDE /* payment_success.m4a in Resources */,
 				BC48E22421B2993400A60BBA /* Assets.xcassets in Resources */,
 				BC48E22721B2993400A60BBA /* Main.storyboard in Resources */,
 			);

@@ -12,6 +12,26 @@ enum ViewController {
     case credits
 }
 
+import AVFoundation
+
+fileprivate var player: AVAudioPlayer?
+
+func preparePaymentSound() {
+    let url = Bundle.main.url(forResource: "payment_success", withExtension: "m4a")!
+    do {
+        player = try AVAudioPlayer(contentsOf: url)
+        guard let player = player else { return }
+        
+        player.prepareToPlay()
+    } catch let error {
+        print(error.localizedDescription)
+    }
+}
+
+func playPaymentSound() {
+    player?.play()
+}
+
 func setClosesOnPressOutsidePopover(_ closes: Bool) {
     closesOnPressOutsidePopover = closes
     if let unwrappedMonitor = monitor as? NSObject {

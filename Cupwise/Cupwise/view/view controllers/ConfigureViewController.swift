@@ -17,7 +17,7 @@ class ConfigureViewController: NSViewController {
     }
     @IBOutlet fileprivate weak var groupPopUpButton: NSPopUpButton! {
         didSet {
-            update(popUpButton: groupPopUpButton, newItems: expenseManager.groups(), preferredItem: preferredGroupName)
+            update(popUpButton: groupPopUpButton, newItems: expenseManager.groups().map { $0.name }, preferredItem: preferredGroupName)
         }
     }
     @IBOutlet fileprivate weak var priceTextField: NSTextField! {
@@ -35,11 +35,18 @@ class ConfigureViewController: NSViewController {
     @IBAction fileprivate func saveButtonPressed(_ sender: Any) {
         if let price = Double(priceTextField.stringValue), price > 0,
             let coffeeGroupName = groupPopUpButton.selectedItem?.title,
-            let coffeeAccountName = coffeeAccountPopupButton.selectedItem?.title {
+            let coffeeAccountName = coffeeAccountPopupButton.selectedItem?.title,
+            let coffeeGroup = expenseManager.groups().reduce(nil, { (accumulator: Group?, group: Group) -> Group? in group.name == coffeeGroupName ? group : accumulator }) {
             
             expenseManager.coffeePrice = price.roundedWithTwoDecimalPlaces()
-            expenseManager.coffeeGroupId = expenseManager.idFor(group: coffeeGroupName)
-            expenseManager.coffeeAccountId = expenseManager.membersFor(group: coffeeGroupName).reduce(-1) { $1.0 == coffeeAccountName ? $1.1 : $0 }
+            expenseManager.coffeeGroupId = coffeeGroup.id
+            expenseManager.coffeeAccountId = coffeeGroup.members.filter { $0.name == coffeeAccountName }.first?.id
+            
+            if expenseManager.coffeeAccountId != nil {
+                UserDefaults.standard.set(expenseManager.coffeePrice, forKey: "coffeePrice")
+                UserDefaults.standard.set(expenseManager.coffeeGroupId, forKey: "coffeeGroupId")
+                UserDefaults.standard.set(expenseManager.coffeeAccountId, forKey: "coffeeAccountId")
+            }
             
             switchFrom(currentViewController: self, toViewController: .coffee)
         } else {
@@ -54,13 +61,13 @@ class ConfigureViewController: NSViewController {
     
     fileprivate func updateCoffeAccountPopUpButtonItems() {
         let selectedGroup = groupPopUpButton.selectedItem?.title ?? ""
-        let selectedGroupMembers = expenseManager.membersFor(group: selectedGroup).map { $0.0 }
-        update(popUpButton: coffeeAccountPopupButton, newItems: selectedGroupMembers, preferredItem: preferredCoffeeAccountName)
+        let selectedGroupMembers = expenseManager.groups().reduce([]) { $1.name == selectedGroup ? $1.members : $0}
+        update(popUpButton: coffeeAccountPopupButton, newItems: selectedGroupMembers.map { $0.name }, preferredItem: preferredCoffeeAccountName)
     }
     
     fileprivate func updateCurrencyPopUpButtonItems() {
         let selectedGroup = groupPopUpButton.selectedItem?.title ?? ""
-        let selectedGroupCurrencies = expenseManager.currenciesFor(group: selectedGroup)
+        let selectedGroupCurrencies = expenseManager.groups().reduce([]) { $1.name == selectedGroup ? $1.currencies : $0}
         let defaultCurrency = expenseManager.currentUser()?.defaultCurrency ?? ""
         update(popUpButton: currencyPopUpButton, newItems: selectedGroupCurrencies, preferredItem: defaultCurrency)
     }

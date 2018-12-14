@@ -83,7 +83,7 @@ class SplitwiseConnector {
                     members.append(member)
                 }
                 
-                let group = Group(id: groupId, name: groupName, members: members, currencies: currencies)
+                let group = Group(id: groupId, name: groupName, currencies: currencies, members: members)
                 groups.append(group)
             }
             success(groups)

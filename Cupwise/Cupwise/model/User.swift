@@ -9,12 +9,4 @@ struct User {
     var name: String { return "\(firstName) \(lastName)"}
     let email: String
     let defaultCurrency: String
-    
-    init(id: Int, firstName: String, lastName: String, email: String, defaultCurrency: String) {
-        self.id = id
-        self.firstName = firstName
-        self.lastName = lastName
-        self.email = email
-        self.defaultCurrency = defaultCurrency
-    }
 }
