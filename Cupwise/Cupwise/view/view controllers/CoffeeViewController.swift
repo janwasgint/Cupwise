@@ -62,11 +62,7 @@ class CoffeeViewController: NSViewController {
     @IBAction func showExpensButtonPressed(_ sender: Any) {
         if let groupID = expenseManager.coffeeGroupId,
             let groupURL = URL(string: "https://secure.splitwise.com/#/groups/\(groupID)") {
-            setClosesOnPressOutsidePopover(false)
             NSWorkspace.shared.open(groupURL)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
-                setClosesOnPressOutsidePopover(true)
-            })
             showExpenseButton.fadeOut(duration: 0.5) {
                 self.showExpenseButton.isHidden = true
             }

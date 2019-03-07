@@ -13,6 +13,7 @@
 		BC2F1F2121B54FD300DDA710 /* SplitwiseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2021B54FD300DDA710 /* SplitwiseConnector.swift */; };
 		BC2F1F2321B56EE400DDA710 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2221B56EE400DDA710 /* Group.swift */; };
 		BC2F1F2521B57A2A00DDA710 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F1F2421B57A2A00DDA710 /* User.swift */; };
+		BC35FBB12231470500D0F56D /* payment_success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BC4BAC7521C3EBFE00F1E27E /* payment_success.m4a */; };
 		BC3D183721B9B07C000EE7C1 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D183621B9B07C000EE7C1 /* CircleProgressView.swift */; };
 		BC48E22021B2993300A60BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC48E21F21B2993300A60BBA /* AppDelegate.swift */; };
 		BC48E22421B2993400A60BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC48E22321B2993400A60BBA /* Assets.xcassets */; };
@@ -332,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC48E25821B2DB1700A60BBA /* Podfile in Resources */,
+				BC35FBB12231470500D0F56D /* payment_success.m4a in Resources */,
 				BC48E22421B2993400A60BBA /* Assets.xcassets in Resources */,
 				BC48E22721B2993400A60BBA /* Main.storyboard in Resources */,
 			);
